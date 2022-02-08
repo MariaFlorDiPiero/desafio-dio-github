@@ -1,0 +1,76 @@
+Anotações
+
+Comandos básicos do GIT no prompt de comando
+Dir mostra lista de diretórios
+cd / vai para uma pasta acima
+cd nome da pasta vai para a pasta
+cls clear
+tab completa a palavra
+mkdir cria pasta
+echo nome do arquivo > nome do arquivo e extensão para criar um arquivo
+del nome do arquivo para deletar arquivo
+rmdir nome do diretório/pasta para deletar uma pasta/diretório
+
+No Git dash
+cd para navegar entre as pastas
+cd.. sobe uma pasta acima
+mkdir nome da pasta cria nova pasta
+git init para criar um repositório git
+git init –bare Com este comando nós criamos um repositório que não terá a working tree, ou seja, não conterá uma cópia dos nossos arquivos. Como o repositório servirá apenas como servidor, para que outros membros da equipe sincronizem seus trabalhos, poupamos espaço de armazenamento desta forma.
+git status para analisar o status do repositório
+git add para monitorar os arquivos da pasta e/ou adicionar esse conteúdo ao próximo commit
+	git add nome do arquivo para monitorar um arquivo específico
+	git add . para monitorar todos os arquivos da pasta
+	git add * adiciona todos os arquivos
+git rm para parar de monitorar o arquivo
+clear para limpar a tela
+git log para mostrar informações, a primeira é o hash (identificação de cada commit) do commit, a segunda é o branch (ramo em que o commit se encontra), existem diversas formas de ver informações.
+git config --local para alterar informações no projeto
+git config --global para alterar informações na máquina toda
+git config –user.name “ ” para alterar nome
+git config –user.email “ ” para alterar email
+git config –list lista as configurações do git
+git config –global –unset user.name apaga o nome do usuário das configurações
+.gitignore arquivo criado que o git vai ignorar, tem que colocar o nome dos arquivos nas linhas do .gitignore, adicionar e comitar o .gitignore
+git log –pretty=”parâmetros de formatação” para selecionar o que mostrar por parâmetros que vc descreveu
+git remote lista os repositórios que ele conhece
+git remote add nome-do-repositorio caminho/do/repositório (url, pasta, etc) para adicionar o repositório git
+git remote -v mostra o endereço do local, lista os repositórios cadastrados
+git clone caminho para o git clonar pela primeira vez o repositório remoto para o repositório local
+git push nome-do-repositorio branch empurra os dados para um determinado repositório
+git pull nome-do-repositorio branch pega os dados de um determinado repositório
+git remote rename nome-do-repositorio-antigo novo-nome-do-repositorio para renomear um repositório
+ls lista os arquivos do repositório
+ls -a lista os arquivos ocultos
+git branch mostra todos os branchs da pasta/projeto que vc está trabalhando
+git branch nome do branch para adicionar novo branch
+git checkout nome do branch para trabalhar dentro deste branch
+git checkout -b nome do branch cria o branch e já vai para ele
+git checkout – nome do arquivo apaga o que criou na última mudança
+git log -p consegue ver as alterações no código
+git log –oneline para ver o histórico em uma linha
+git diff número do commit .. número do commit que vai comparar mostra as diferenças entre commits 
+git log -n 2 mostra somente os últimos dois commits
+git tag -a nome da versão para colocar uma tag, um ponto da versão
+git reset HEAD nome do arquivo apaga a adicionamento do arquivo para commitar
+git revert número (hash) do commit reverte um commit
+git stash salva para executar depois, armazena temporariamente as alterações
+git stash list lista os arquivos salvos para commitar depois
+git stash apply número da stash aplica as modificações
+git stash drop para remover a alteração da git stash list
+git stash pop aplica as modificações e remove da lista stash
+cat nome do arquivo mostra o conteúdo do arquivo selecionado
+pwd mostra o caminho completo da pasta que vc está
+eval $(ssh-agent -s) para iniciar o projeto, para rodar em plano de fundo o ssh
+ssh-add nome da chave privada adiciona o arquivo com a chave
+mv nome do arquivo ./nome da pasta para onde o arquivo vai para mover arquivos para outras pastas
+ git clone link do diretório do github clona o diretório do github
+
+
+Links úteis:
+
+https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Gravando-Altera%C3%A7%C3%B5es-em-Seu-Reposit%C3%B3rio 
+
+https://devhints.io/git-log
+
+https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration 
